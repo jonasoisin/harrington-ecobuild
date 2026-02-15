@@ -19,9 +19,11 @@ export default {
           hover: "#B91C1C",
         },
         secondary: {
-          DEFAULT: "#0B2B40", // Deep Ridge Blue
+          DEFAULT: "#0B2B40", // PillarVolt Blue
           light: "#173A52",
         },
+        "deep-red": "#8B0000",
+        "red-500": "#ef4444",
         "background-light": "#F9FAFB",
         "background-dark": "#0A0D12",
         "surface-light": "#FFFFFF",

@@ -10,7 +10,7 @@ export function GlobalReach() {
                     <h4 className="text-primary font-bold uppercase tracking-widest text-2xl mb-2">OUR GLOBAL <span className="text-primary">REACH</span></h4>
 
                     <p className="text-gray-600 mt-6 mb-12 text-lg leading-relaxed">
-                        DeepRidge Energy operates across 24 countries, managing over $140 billion in energy assets. Our project development pipeline focus is centered on regions with high potential for renewable transition and existing infrastructure optimization.
+                        PillarVolt operates across 24 countries, managing over $140 billion in energy assets. Our project development pipeline focus is centered on regions with high potential for renewable transition and existing infrastructure optimization.
                     </p>
 
                     <div className="grid grid-cols-2 gap-12 mb-12">

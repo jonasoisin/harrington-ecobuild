@@ -6,7 +6,7 @@ import Image from "next/image";
 export function Innovations() {
     const innovations = [
         {
-            title: "DeepRidge & TechLink Launch OceanLab™",
+            title: "PillarVolt & TechLink Launch OceanLab™",
             desc: "A first-of-its-kind initiative aimed to accelerate the development of advanced subsea completion technologies.",
             image: "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=2070&auto=format&fit=crop", // Lab/Tech
             link: "#",

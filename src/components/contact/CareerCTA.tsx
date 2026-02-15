@@ -9,10 +9,10 @@ export function CareerCTA() {
         <section className="relative h-[450px] bg-slate-900 overflow-hidden">
             <div className="absolute inset-0 flex">
                 <div className="w-full md:w-1/3 bg-slate-800 flex items-center justify-center px-8 md:px-12 z-10">
-                    <div className="border-l-4 border-red-500 pl-6">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">Own your career at DeepRidge</h2>
+                    <div className="border-l-4 border-deep-red pl-6">
+                        <h2 className="text-3xl font-display font-bold text-white mb-4">Own your career at PillarVolt</h2>
                         <p className="text-slate-400 mb-6">Our people are our greatest asset. Join a team dedicated to excellence.</p>
-                        <Link href="#" className="inline-block border border-red-500 text-white px-8 py-3 hover:bg-white hover:text-slate-900 transition-all font-bold tracking-widest text-xs uppercase">
+                        <Link href="#" className="inline-block border border-deep-red text-white px-8 py-3 hover:bg-white hover:text-slate-900 transition-all font-bold tracking-widest text-xs uppercase">
                             View Careers
                         </Link>
                     </div>

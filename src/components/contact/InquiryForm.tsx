@@ -18,7 +18,7 @@ export function InquiryForm() {
                             <div>
                                 <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">First Name *</label>
                                 <input
-                                    className="w-full bg-surface-light border border-black focus:border-red-500 focus:ring-0 transition-all p-4 rounded-sm"
+                                    className="w-full bg-surface-light border border-black focus:border-deep-red focus:ring-0 transition-all p-4 rounded-sm"
                                     required
                                     type="text"
                                 />
@@ -26,7 +26,7 @@ export function InquiryForm() {
                             <div>
                                 <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">Last Name *</label>
                                 <input
-                                    className="w-full bg-surface-light border border-black focus:border-red-500 focus:ring-0 transition-all p-4 rounded-sm"
+                                    className="w-full bg-surface-light border border-black focus:border-deep-red focus:ring-0 transition-all p-4 rounded-sm"
                                     required
                                     type="text"
                                 />
@@ -36,7 +36,7 @@ export function InquiryForm() {
                             <div>
                                 <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">Email Address *</label>
                                 <input
-                                    className="w-full bg-surface-light border border-black focus:border-red-500 focus:ring-0 transition-all p-4 rounded-sm"
+                                    className="w-full bg-surface-light border border-black focus:border-deep-red focus:ring-0 transition-all p-4 rounded-sm"
                                     required
                                     type="email"
                                 />
@@ -44,14 +44,14 @@ export function InquiryForm() {
                             <div>
                                 <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">Phone Number</label>
                                 <input
-                                    className="w-full bg-surface-light border border-black focus:border-red-500 focus:ring-0 transition-all p-4 rounded-sm"
+                                    className="w-full bg-surface-light border border-black focus:border-deep-red focus:ring-0 transition-all p-4 rounded-sm"
                                     type="tel"
                                 />
                             </div>
                         </div>
                         <div>
                             <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">Inquiry Type *</label>
-                            <select className="w-full bg-surface-light border border-black focus:border-red-500 focus:ring-0 transition-all p-4 rounded-sm text-slate-900 border-r-8 border-transparent">
+                            <select className="w-full bg-surface-light border border-black focus:border-deep-red focus:ring-0 transition-all p-4 rounded-sm text-slate-900 border-r-8 border-transparent">
                                 <option>General Inquiry</option>
                                 <option>Career Opportunities</option>
                                 <option>Media & Press</option>
@@ -62,7 +62,7 @@ export function InquiryForm() {
                         <div>
                             <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">Message *</label>
                             <textarea
-                                className="w-full bg-surface-light border border-black focus:border-red-500 focus:ring-0 transition-all p-4 rounded-sm"
+                                className="w-full bg-surface-light border border-black focus:border-deep-red focus:ring-0 transition-all p-4 rounded-sm"
                                 required
                                 rows={6}
                             ></textarea>
@@ -83,14 +83,14 @@ export function InquiryForm() {
                             Global Reach
                         </h3>
                         <div className="space-y-6">
-                            <div className="border-b border-red-500 pb-4">
+                            <div className="border-b border-deep-red pb-4">
                                 <h4 className="font-bold uppercase tracking-wide text-xs text-primary mb-1">Corporate HQ</h4>
                                 <p className="text-sm leading-relaxed text-slate-600">555 W 5th St, Los Angeles, CA 90013, United States</p>
-                                <p className="text-sm font-semibold mt-2 text-slate-900">+1 530 325 0957</p>
+                                <p className="text-sm font-semibold mt-2 text-slate-900">+1 571-554-3285</p>
                             </div>
                         </div>
                     </div>
-                    <div className="p-8 border border-red-500 rounded-sm">
+                    <div className="p-8 border border-deep-red rounded-sm">
                         <h3 className="text-xl font-display font-bold mb-6">Stay Connected</h3>
                         <div className="flex gap-4">
                             <Link href="#" className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-600">

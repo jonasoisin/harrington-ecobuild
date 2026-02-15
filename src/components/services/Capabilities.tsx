@@ -34,7 +34,7 @@ export function Capabilities() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {capabilities.map((cap, index) => (
-                    <div key={index} className="bg-white p-8 hover:shadow-lg transition-shadow border border-red-500">
+                    <div key={index} className="bg-white p-8 hover:shadow-lg transition-shadow border border-deep-red">
                         <div className="mb-6 text-gray-400">
                             <cap.icon className="w-10 h-10 stroke-1" />
                         </div>

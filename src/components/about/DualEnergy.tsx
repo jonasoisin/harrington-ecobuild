@@ -4,7 +4,7 @@ export function DualEnergy() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
                     <div className="lg:w-1/2 space-y-12">
-                        <div className="border-l-4 border-red-500 pl-4">
+                        <div className="border-l-4 border-deep-red pl-4">
                             <h2 className="font-display text-4xl font-extrabold uppercase leading-tight">Leading the <br /><span className="text-primary">Dual-Energy</span> Era</h2>
                         </div>
                         <div className="space-y-8">

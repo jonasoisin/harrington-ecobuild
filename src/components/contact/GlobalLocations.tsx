@@ -22,7 +22,7 @@ export function GlobalLocations() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
                     {locations.map((loc, index) => (
-                        <div key={index} className="bg-white shadow-sm border border-red-500 group">
+                        <div key={index} className="bg-white shadow-sm border border-deep-red group">
                             <div className="h-48 bg-slate-200 relative overflow-hidden">
                                 <Image
                                     src={loc.image}

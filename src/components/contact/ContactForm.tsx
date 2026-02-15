@@ -17,28 +17,28 @@ export function ContactForm() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-secondary uppercase tracking-wider">First Name *</label>
-                                <input type="text" className="w-full bg-gray-50 border-b border-red-500 p-4 focus:outline-none focus:border-red-500 transition-colors" />
+                                <input type="text" className="w-full bg-gray-50 border-b border-deep-red p-4 focus:outline-none focus:border-deep-red transition-colors" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-secondary uppercase tracking-wider">Last Name *</label>
-                                <input type="text" className="w-full bg-gray-50 border-b border-red-500 p-4 focus:outline-none focus:border-red-500 transition-colors" />
+                                <input type="text" className="w-full bg-gray-50 border-b border-deep-red p-4 focus:outline-none focus:border-deep-red transition-colors" />
                             </div>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-secondary uppercase tracking-wider">Email Address *</label>
-                                <input type="email" className="w-full bg-gray-50 border-b border-red-500 p-4 focus:outline-none focus:border-red-500 transition-colors" />
+                                <input type="email" className="w-full bg-gray-50 border-b border-deep-red p-4 focus:outline-none focus:border-deep-red transition-colors" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-secondary uppercase tracking-wider">Phone Number</label>
-                                <input type="tel" className="w-full bg-gray-50 border-b border-red-500 p-4 focus:outline-none focus:border-red-500 transition-colors" />
+                                <input type="tel" className="w-full bg-gray-50 border-b border-deep-red p-4 focus:outline-none focus:border-deep-red transition-colors" />
                             </div>
                         </div>
 
                         <div className="space-y-2">
                             <label className="text-xs font-bold text-secondary uppercase tracking-wider">Message *</label>
-                            <textarea rows={6} className="w-full bg-gray-50 border-b border-red-500 p-4 focus:outline-none focus:border-red-500 transition-colors resize-none"></textarea>
+                            <textarea rows={6} className="w-full bg-gray-50 border-b border-deep-red p-4 focus:outline-none focus:border-deep-red transition-colors resize-none"></textarea>
                         </div>
 
                         <Button type="submit" className="w-full md:w-auto px-12">SUBMIT REQUEST</Button>
@@ -55,7 +55,7 @@ export function ContactForm() {
                             <div>
                                 <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Corporate HQ</h4>
                                 <p className="text-sm text-gray-600">555 W 5th St, Los Angeles, CA 90013, United States</p>
-                                <p className="text-sm text-secondary font-bold mt-2">+1 530 325 0957</p>
+                                <p className="text-sm text-secondary font-bold mt-2">+1 571-554-3285</p>
                             </div>
                         </div>
                     </div>

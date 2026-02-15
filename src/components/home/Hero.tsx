@@ -35,7 +35,7 @@ export function Hero() {
             </div>
 
             {/* Bottom Bar items */}
-            <div className="relative z-20 bg-stone-900/60 backdrop-blur-sm border-t border-red-500/10">
+            <div className="relative z-20 bg-stone-900/60 backdrop-blur-sm border-t border-deep-red/10">
                 <div className="container mx-auto px-4 md:px-6 py-8">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                         <div className="flex items-start gap-4">

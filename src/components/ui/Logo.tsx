@@ -12,7 +12,7 @@ export function Logo({ className = "", width = 40, height = 40 }: LogoProps) {
         <div className={`relative flex items-center justify-center ${className}`}>
             <Image
                 src="/de.png"
-                alt="DeepRidge Energy Logo"
+                alt="PillarVolt Logo"
                 width={width}
                 height={height}
                 className="object-contain"

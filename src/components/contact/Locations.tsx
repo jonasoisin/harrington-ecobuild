@@ -18,7 +18,7 @@ export function Locations() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {locations.map((loc, index) => (
-                    <div key={index} className="bg-white border border-red-500 group cursor-pointer hover:shadow-xl transition-shadow">
+                    <div key={index} className="bg-white border border-deep-red group cursor-pointer hover:shadow-xl transition-shadow">
                         <div className="relative h-64 overflow-hidden">
                             <Image
                                 src={loc.image}

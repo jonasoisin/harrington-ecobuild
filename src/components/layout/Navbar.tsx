@@ -9,7 +9,7 @@ export function Navbar() {
     const pathname = usePathname();
 
     return (
-        <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-red-500 transition-colors duration-300">
+        <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-deep-red transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     <div className="flex items-center">
@@ -20,7 +20,7 @@ export function Navbar() {
                             <div className="relative w-32 h-12">
                                 <Image
                                     src="/de.png"
-                                    alt="DeepRidge Energy"
+                                    alt="PillarVolt"
                                     fill
                                     className="object-contain object-left"
                                     priority

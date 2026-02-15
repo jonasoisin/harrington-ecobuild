@@ -1,6 +1,6 @@
-# Stitch Contact DeepRidge Energy
+# Stitch Contact PillarVolt
 
-Overview of the Stitch Contact DeepRidge Energy project. This project is a Next.js application designed for DeepRidge Energy, featuring a modern, responsive design with a focus on showcased services, projects, and news.
+Overview of the Stitch Contact PillarVolt project. This project is a Next.js application designed for PillarVolt, featuring a modern, responsive design with a focus on showcased services, projects, and news.
 
 ## Features
 

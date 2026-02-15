@@ -23,11 +23,11 @@ export function ServiceHero() {
                         <span className="text-primary">Global Transition</span>
                     </h1>
                     <p className="text-xl text-gray-200 max-w-2xl font-light leading-relaxed">
-                        DeepRidge Energy delivers integrated engineering solutions across Hywind offshore wind and advanced natural gas production.
+                        PillarVolt delivers integrated engineering solutions across Hywind offshore wind and advanced natural gas production.
                     </p>
                     <div className="pt-8 flex gap-4">
                         <Button variant="primary">EXPLORE SERVICES</Button>
-                        <Button variant="outline" className="border-red-500 text-white hover:bg-white hover:text-secondary">OUR PORTFOLIO</Button>
+                        <Button variant="outline" className="border-deep-red text-white hover:bg-white hover:text-secondary">OUR PORTFOLIO</Button>
                     </div>
                 </div>
             </div>

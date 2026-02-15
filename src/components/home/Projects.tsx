@@ -34,7 +34,7 @@ export function Projects() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
-                    <div key={index} className="bg-white group cursor-pointer hover:shadow-xl transition-shadow border border-red-500 pb-6">
+                    <div key={index} className="bg-white group cursor-pointer hover:shadow-xl transition-shadow border border-deep-red pb-6">
                         <div className="relative h-64 overflow-hidden mb-6">
                             <Image
                                 src={project.image}

@@ -20,7 +20,7 @@ export function ContactHero() {
                 <div className="pl-0">
                     <h1 className="text-5xl md:text-6xl font-display font-bold text-white mb-4">Contact Us</h1>
                     <p className="text-xl text-gray-300 max-w-2xl">
-                        Partner with DeepRidge Energy for innovative solutions in Hywind and Natural Gas. Our global team is ready to support your next breakthrough.
+                        Partner with PillarVolt for innovative solutions in Hywind and Natural Gas. Our global team is ready to support your next breakthrough.
                     </p>
                 </div>
             </div>

@@ -12,7 +12,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             primary: "bg-primary text-white hover:bg-[#C4122C]",
             secondary: "bg-secondary text-white hover:bg-[#112240]",
             outline:
-                "border-2 border-red-500 text-primary hover:bg-primary hover:text-white",
+                "border-2 border-deep-red text-primary hover:bg-primary hover:text-white",
             ghost: "text-secondary hover:bg-gray-100",
             link: "text-primary hover:underline p-0 h-auto",
             white: "bg-white text-secondary hover:bg-gray-100 font-bold",

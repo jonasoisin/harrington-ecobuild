@@ -31,7 +31,7 @@ export function ProjectList() {
 
     return (
         <div className="bg-gray-50 min-h-screen">
-            <div className="bg-white border-b border-red-500 sticky top-20 z-40">
+            <div className="bg-white border-b border-deep-red sticky top-20 z-40">
                 <div className="container mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
                     <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
                         {(["All Projects", "Oil Refining"] as Category[]).map((cat) => (
@@ -90,7 +90,7 @@ export function ProjectList() {
                                     Advanced refining capabilities delivering high-quality petroleum products globally.
                                 </p>
 
-                                <div className="grid grid-cols-2 gap-4 mb-6 border-t border-red-500 pt-6">
+                                <div className="grid grid-cols-2 gap-4 mb-6 border-t border-deep-red pt-6">
                                     {project.stats.map((stat, i) => (
                                         <div key={i}>
                                             <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">{stat.label}</div>

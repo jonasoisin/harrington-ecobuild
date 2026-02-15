@@ -14,13 +14,13 @@ export default function Services() {
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full relative z-10">
                     <div className="max-w-3xl">
-                        <div className="border-l-4 border-red-500 pl-6 mb-8 border-red-500">
+                        <div className="border-l-4 border-deep-red pl-6 mb-8 border-deep-red">
                             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight font-display">
                                 Services <br />
                                 <span className="text-primary">What we do.</span>
                             </h1>
                             <p className="text-base sm:text-lg text-slate-200 mb-6 sm:mb-8 max-w-2xl leading-relaxed">
-                                Our industry is experiencing fundamental challenges. From climate change and geopolitics to the energy markets, we are facing new realities. Some see them as threats. In DeepRidge Energy, we believe our job is to turn them into opportunities. That's why we're looking for new ways to utilise our expertise in the energy industry, exploring opportunities in new energy as well as driving innovation in oil and gas around the world. We know that the future has to be low carbon. Our ambition is to be the world's most carbon-efficient oil and gas producer, as well as driving innovation in offshore wind and renewable energy.
+                                Our industry is experiencing fundamental challenges. From climate change and geopolitics to the energy markets, we are facing new realities. Some see them as threats. In PillarVolt, we believe our job is to turn them into opportunities. That's why we're looking for new ways to utilise our expertise in the energy industry, exploring opportunities in new energy as well as driving innovation in oil and gas around the world. We know that the future has to be low carbon. Our ambition is to be the world's most carbon-efficient oil and gas producer, as well as driving innovation in offshore wind and renewable energy.
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <Link
@@ -57,7 +57,7 @@ export default function Services() {
                                 </div>
                             </div>
                             <div>
-                                <div className="border-l-4 border-red-500 pl-6 mb-6">
+                                <div className="border-l-4 border-deep-red pl-6 mb-6">
                                     <h2 className="text-3xl font-bold mb-4 font-display">
                                         Hywind Offshore Solutions
                                     </h2>
@@ -128,7 +128,7 @@ export default function Services() {
                                 </div>
                             </div>
                             <div>
-                                <div className="border-l-4 border-red-500 pl-6 mb-6">
+                                <div className="border-l-4 border-deep-red pl-6 mb-6">
                                     <h2 className="text-3xl font-bold mb-4 font-display">
                                         Natural Gas Production
                                     </h2>
@@ -184,7 +184,7 @@ export default function Services() {
                 </div>
             </section>
 
-            <section className="py-24 bg-slate-50 border-y border-red-500">
+            <section className="py-24 bg-slate-50 border-y border-deep-red">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">
@@ -195,7 +195,7 @@ export default function Services() {
                         </h3>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div className="bg-white p-8 border border-red-500 hover:border-red-500 transition-colors group">
+                        <div className="bg-white p-8 border border-deep-red hover:border-deep-red transition-colors group">
                             <span className="material-icons-outlined text-4xl text-slate-400 group-hover:text-primary transition-colors mb-4">
                                 architecture
                             </span>
@@ -204,7 +204,7 @@ export default function Services() {
                                 Advanced FEA modeling for extreme marine environments.
                             </p>
                         </div>
-                        <div className="bg-white p-8 border border-red-500 hover:border-red-500 transition-colors group">
+                        <div className="bg-white p-8 border border-deep-red hover:border-deep-red transition-colors group">
                             <span className="material-icons-outlined text-4xl text-slate-400 group-hover:text-primary transition-colors mb-4">
                                 electric_bolt
                             </span>
@@ -213,7 +213,7 @@ export default function Services() {
                                 Smart grid synchronization and voltage stability solutions.
                             </p>
                         </div>
-                        <div className="bg-white p-8 border border-red-500 hover:border-red-500 transition-colors group">
+                        <div className="bg-white p-8 border border-deep-red hover:border-deep-red transition-colors group">
                             <span className="material-icons-outlined text-4xl text-slate-400 group-hover:text-primary transition-colors mb-4">
                                 visibility
                             </span>
@@ -222,7 +222,7 @@ export default function Services() {
                                 24/7 autonomous monitoring and digital twins.
                             </p>
                         </div>
-                        <div className="bg-white p-8 border border-red-500 hover:border-red-500 transition-colors group">
+                        <div className="bg-white p-8 border border-deep-red hover:border-deep-red transition-colors group">
                             <span className="material-icons-outlined text-4xl text-slate-400 group-hover:text-primary transition-colors mb-4">
                                 handyman
                             </span>
@@ -240,9 +240,9 @@ export default function Services() {
                     <div className="flex flex-col lg:flex-row gap-12">
                         <div className="lg:w-2/3 relative overflow-hidden h-[500px]">
                             <div className="absolute inset-0 bg-black flex items-end p-12">
-                                <div className="border-l-4 border-red-500 pl-6">
+                                <div className="border-l-4 border-deep-red pl-6">
                                     <h3 className="text-3xl font-bold text-white mb-4 font-display">
-                                        DeepRidge Expands Hywind Project in Northern North Sea
+                                        PillarVolt Expands Hywind Project in Northern North Sea
                                     </h3>
                                     <p className="text-slate-300 mb-6 max-w-lg">
                                         New milestone reached in offshore wind deployment with the
@@ -272,7 +272,7 @@ export default function Services() {
                                         MARCH 10, 2025
                                     </p>
                                     <h4 className="text-sm font-semibold group-hover:text-primary transition-colors leading-snug">
-                                        DeepRidge announces Q1 2025 financial results.
+                                        PillarVolt announces Q1 2025 financial results.
                                     </h4>
                                 </div>
                                 <div className="group cursor-pointer">
@@ -321,7 +321,7 @@ export default function Services() {
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
                         <a
-                            href="mailto:consult@deepridge.com"
+                            href="mailto:consult@pillarvolt.com"
                             className="bg-primary hover:bg-red-700 text-white px-10 py-4 font-bold uppercase tracking-widest transition-all"
                         >
                             Request a Consultation

@@ -1,9 +1,6 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
-
 import { LogoCarousel } from "@/components/ui/logo-carousel";
+import { CookieBanner } from "@/components/ui/cookie-banner";
 
 const partnerLogos = [
   { id: 1, name: "ExxonMobil", src: "https://commons.wikimedia.org/wiki/Special:FilePath/Exxon_logo.svg" },
@@ -17,13 +14,6 @@ const partnerLogos = [
 ];
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.documentElement.classList.toggle('dark');
-  };
-
   return (
     <main className="min-h-screen bg-background-light text-slate-900 transition-colors duration-200 font-sans">
 
@@ -32,21 +22,21 @@ export default function Home() {
         <img alt="Offshore wind farm at sunset" className="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-95dvbjJwsmLWBdV_bTb6eSHeytAiZ9NwA8oaYoSFCzjxaaH0XwbCAYQrxdrWSToAbd0Bm2fNPqFZL9WuYyJTLOI9WDXxWds5WbjLsvfc9mSEB2pJk7Sf-a8n1BAmnDnQMbGXW0ZFhsa2HU_iCh5Sbllf8UWVZ56iP6wL5j3crzulhpRkWHDycpFD2sMi85zyb2mKN7ywEsw0wdHdotTEfPBeMTc7gFebvGhSHgThc_PpTqGaHJFAUXYcYwOdT-w7VYKh8hQs0w" />
         <div className="absolute inset-0 bg-gradient-to-r from-[rgba(11,43,64,0.9)] to-[rgba(11,43,64,0.4)]"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center py-20 md:py-0">
-          <div className="max-w-2xl border-l-4 border-red-500 pl-8 py-4 border-red-500">
+          <div className="max-w-2xl border-l-4 border-deep-red pl-8 py-4 border-deep-red">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4 md:mb-6">
-              Welcome...<br />to DeepRidge Energy.
+              Welcome...<br />to PillarVolt.
             </h1>
             <p className="text-base sm:text-xl text-slate-200 mb-6 md:mb-10 leading-relaxed max-w-lg">
               Where we energize the lives of millions of people.
             </p>
-            <Link href="/about" className="bg-red-500 text-white px-6 sm:px-10 py-3 sm:py-4 text-sm sm:text-base font-bold tracking-wider hover:bg-slate-100 hover:text-red-500 transition-all flex items-center gap-2 w-fit">
+            <Link href="/about" className="bg-[#8B0000] text-white px-6 sm:px-10 py-3 sm:py-4 text-sm sm:text-base font-bold tracking-wider  transition-all flex items-center gap-2 w-fit">
               Learn more.
               <span className="material-icons-outlined">arrow_forward</span>
             </Link>
           </div>
           <div className="col-span-2 md:col-span-4 text-white">
             <h3 className="text-2xl font-bold mb-4">On track to increase returns and grow production...</h3>
-            <p className="text-lg font-semibold mb-4 text-red-500">Can an oil and gas company be part of a sustainable energy future?</p>
+            <p className="text-lg font-semibold mb-4 text-deep-red">Can an oil and gas company be part of a sustainable energy future?</p>
             <p className="text-sm text-slate-300 leading-relaxed max-w-3xl">
               We're working actively to reduce climate emissions, put a price on carbon, and benefit societies around the world. We aim to be the world's most carbon-efficient oil and gas producer, and are investing actively in renewable.
             </p>
@@ -70,73 +60,73 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
 
             {/* Open */}
-            <div className="bg-white p-8 border-t-4 border-red-500 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-8 border-t-4 border-deep-red shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-2xl font-bold mb-6 text-slate-900">Open.</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">check_circle</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">check_circle</span>
                   <span>Pro-actively communicate in a clear truthful, direct and sincere way</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">groups</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">groups</span>
                   <span>Work together and share experiences</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">visibility</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">visibility</span>
                   <span>Promote and value transparency.</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">chat</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">chat</span>
                   <span>Say what you mean, and do what you say</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">balance</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">balance</span>
                   <span>Stand up for what you believe is just and good.</span>
                 </li>
               </ul>
             </div>
 
             {/* Trust */}
-            <div className="bg-white p-8 border-t-4 border-red-500 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-8 border-t-4 border-deep-red shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-2xl font-bold mb-6 text-slate-900">Trust.</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">volunteer_activism</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">volunteer_activism</span>
                   <span>Believe in your colleague's capabilities and competences.</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">bolt</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">bolt</span>
                   <span>Empower yourself and your colleagues to work towards our strategic goals</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">handshake</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">handshake</span>
                   <span>Respect that the value of your contributions depends on the contributions from others.</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">verified</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">verified</span>
                   <span>Set high standards for yourself and your colleagues</span>
                 </li>
               </ul>
             </div>
 
             {/* Integrity */}
-            <div className="bg-white p-8 border-t-4 border-red-500 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-8 border-t-4 border-deep-red shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-2xl font-bold mb-6 text-slate-900">Integrity.</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">shield</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">shield</span>
                   <span>Be ethically unyielding and honest</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">gavel</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">gavel</span>
                   <span>Accept that you are empowered and have influence over our decisions and actions</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">assignment_turned_in</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">assignment_turned_in</span>
                   <span>Take responsibility for your actions and deliver on promises</span>
                 </li>
                 <li className="flex gap-3 text-slate-600 text-sm leading-relaxed">
-                  <span className="material-icons-outlined text-red-500 shrink-0 text-lg">loyalty</span>
+                  <span className="material-icons-outlined text-deep-red shrink-0 text-lg">loyalty</span>
                   <span>Act decisively and be loyal to decisions</span>
                 </li>
               </ul>
@@ -153,7 +143,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-xl">
             <div className="w-12 h-1 bg-primary mb-6"></div>
-            <h2 className="text-4xl font-bold text-red-500 mb-6">Energy for life</h2>
+            <h2 className="text-4xl font-bold text-#8B0000 mb-6">Energy for life</h2>
             <p className="text-white text-lg mb-4">
               In all our business activities we comply with applicable laws, act in an ethical, sustainable and socially responsible manner, practise good corporate governance and respect internationally recognised human rights.
             </p>
@@ -169,15 +159,15 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <span className="text-xs font-bold text-red-500 tracking-widest uppercase border border-red-500 px-3 py-1">Ongoing Project</span>
+                <span className="text-xs font-bold text-deep-red tracking-widest uppercase border border-deep-red px-3 py-1">Ongoing Project</span>
               </div>
               <h2 className="text-4xl font-bold mb-6 text-slate-900">Oil refining.</h2>
               <div className="prose prose-slate text-slate-600">
                 <p className="mb-4">
-                  DeepRidge Energy is capable of carrying out high volumes of oil refining. In recent years, the Company's refining activities have been focused on meeting the market demand for quality petroleum products.
+                  PillarVolt is capable of carrying out high volumes of oil refining. In recent years, the Company's refining activities have been focused on meeting the market demand for quality petroleum products.
                 </p>
                 <p className="mb-4">
-                  Over a number of years, DeepRidge Energy has been consistently implementing the modernization program for refineries, which has improved the quality of its products and increased its competitiveness.
+                  Over a number of years, PillarVolt has been consistently implementing the modernization program for refineries, which has improved the quality of its products and increased its competitiveness.
                 </p>
                 <p className="mb-8">
                   This is the most ambitious program for the modernization of oil refining capacities in the oil industry, which includes the fulfilment of the Company's obligations under the quadripartite agreement.
@@ -195,17 +185,7 @@ export default function Home() {
         </div>
       </section>
 
-
-
-      <div className="fixed bottom-6 left-6 max-w-sm bg-white p-6 shadow-2xl border border-red-500 z-[100] transition-transform duration-500" id="cookie-banner" style={{ display: 'none' }}> {/* Hidden by default for now, logic to be added if needed */}
-        <button className="absolute top-4 right-4 text-slate-400 hover:text-slate-600" onClick={() => (document.getElementById('cookie-banner') as HTMLElement).style.display = 'none'}>
-          <span className="material-icons-outlined text-sm">close</span>
-        </button>
-        <p className="text-sm text-slate-600 mb-4 leading-relaxed">
-          This website uses cookies to enhance your experience and analyze traffic. To learn more, view our <a className="text-primary underline" href="#">Privacy Policy</a>.
-        </p>
-        <button className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-2 text-sm transition-colors uppercase tracking-widest" onClick={() => (document.getElementById('cookie-banner') as HTMLElement).style.display = 'none'}>Accept All</button>
-      </div>
+      <CookieBanner />
     </main>
   );
 }

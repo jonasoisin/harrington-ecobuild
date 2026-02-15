@@ -2,7 +2,7 @@ export function AboutHero() {
     return (
         <section className="relative h-[700px] flex items-center overflow-hidden">
             <img
-                alt="Engineers at deepridge energy site"
+                alt="Engineers at PillarVolt site"
                 className="absolute inset-0 w-full h-full object-cover"
                 src="https://d2cbg94ubxgsnp.cloudfront.net/Pictures/480xAny/6/1/6/541616_shutterstock_2613449805_43528.jpg"
             />
@@ -17,7 +17,7 @@ export function AboutHero() {
                         </h1>
                     </div>
                     <p className="text-xl text-slate-200 mb-8 leading-relaxed">
-                        DeepRidge Energy is a global leader in sustainable extraction and floating offshore wind technology. We engineer the bridge to a cleaner future through innovation and integrity.
+                        PillarVolt is a global leader in sustainable extraction and floating offshore wind technology. We engineer the bridge to a cleaner future through innovation and integrity.
                     </p>
                     <div className="flex flex-wrap gap-4">
                         <button className="bg-primary hover:bg-red-700 text-white px-8 py-3 font-bold uppercase tracking-wider transition-all rounded-sm">Explore Our Impact</button>

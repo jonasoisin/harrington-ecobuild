@@ -12,7 +12,7 @@ export function Commitments() {
                             <div>
                                 <h3 className="font-display font-bold text-xl uppercase tracking-wide mb-3 text-slate-900">Respecting People</h3>
                                 <p className="text-slate-600 leading-relaxed">
-                                    We are committed to providing a safe and secure environment for everyone working at our facilities and job sites. DeepRidge Energy's safety and security value is Zero Harm. We provide an environment recognised for its equality and diversity, and we treat everyone with fairness, respect and dignity. We do not tolerate any intimidation or harassment of colleagues or others affected by our operations.
+                                    We are committed to providing a safe and secure environment for everyone working at our facilities and job sites. PillarVolt's safety and security value is Zero Harm. We provide an environment recognised for its equality and diversity, and we treat everyone with fairness, respect and dignity. We do not tolerate any intimidation or harassment of colleagues or others affected by our operations.
                                 </p>
                             </div>
                         </div>
@@ -27,7 +27,7 @@ export function Commitments() {
                             <div>
                                 <h3 className="font-display font-bold text-xl uppercase tracking-wide mb-3 text-slate-900">Relating to Business Partners</h3>
                                 <p className="text-slate-600 leading-relaxed">
-                                    We seek to work with others who share our commitment to ethics and compliance. We believe in the benefits of competition, and DeepRidge Energy always competes in a fair and ethically justifiable manner.
+                                    We seek to work with others who share our commitment to ethics and compliance. We believe in the benefits of competition, and PillarVolt always competes in a fair and ethically justifiable manner.
                                 </p>
                             </div>
                         </div>

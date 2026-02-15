@@ -1,16 +1,16 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About Us | DeepRidge Energy',
-    description: 'Learn about DeepRidge Energy, our mission, vision, and leadership in the sustainable energy sector.',
+    title: 'About Us | PillarVolt',
+    description: 'Learn about PillarVolt, our mission, vision, and leadership in the sustainable energy sector.',
 };
 
 export default function AboutPage() {
     return (
         <main className="min-h-screen bg-background-light text-slate-900 py-24">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="border-l-4 border-red-500 pl-6 mb-12">
-                    <h1 className="text-4xl font-bold mb-4 font-display">About DeepRidge Energy</h1>
+                <div className="border-l-4 border-deep-red pl-6 mb-12">
+                    <h1 className="text-4xl font-bold mb-4 font-display">About PillarVolt</h1>
                     <p className="text-xl text-slate-600">
                         Pioneering the future of energy through innovation and sustainability.
                     </p>
@@ -20,14 +20,14 @@ export default function AboutPage() {
                         <h2 className="text-2xl font-bold mb-4 font-display text-slate-900">About Us</h2>
                         <h3 className="text-xl font-semibold mb-2 text-slate-800">Who We Are - Our Commitments</h3>
                         <p className="mb-4">
-                            We are DeepRidge Energy, a broad oil and gas energy company with a proud history. We are 2,000 committed colleagues developing oil, gas, wind and solar energy in more than 14 countries worldwide. We're one of the largest operators around the globe, one of the world's largest offshore operators, and a growing force in recyclables. Driven by our international urge to explore beyond the horizon and dedication to safety, equality and sustainability, we're developing the energy of the future.
+                            We are PillarVolt, a broad oil and gas energy company with a proud history. We are 2,000 committed colleagues developing oil, gas, wind and solar energy in more than 14 countries worldwide. We're one of the largest operators around the globe, one of the world's largest offshore operators, and a growing force in recyclables. Driven by our international urge to explore beyond the horizon and dedication to safety, equality and sustainability, we're developing the energy of the future.
                         </p>
                     </div>
 
                     <div className="mb-12">
-                        <h3 className="text-xl font-semibold mb-2 text-slate-800">DeepRidge Energy in brief</h3>
+                        <h3 className="text-xl font-semibold mb-2 text-slate-800">PillarVolt in brief</h3>
                         <p className="mb-4">
-                            DeepRidge Energy is an international energy company present in more than 14 countries worldwide, including several of the world's most important oil and gas provinces. Founded in 1992 under the name DeepRidge Energy Construction Company, we changed our name to DeepRidge Energy in 2010. Our headquarters is in Boise, Idaho USA, and we have over 2,000 employees.
+                            PillarVolt is an international energy company present in more than 14 countries worldwide, including several of the world's most important oil and gas provinces. Founded in 1992 under the name PillarVolt Construction Company, we changed our name to PillarVolt in 2010. Our headquarters is in Boise, Idaho USA, and we have over 2,000 employees.
                         </p>
                     </div>
 
@@ -37,7 +37,7 @@ export default function AboutPage() {
                             A few years ago, floating offshore wind was a distant dream symbolised by a solitary small-scale Hywind turbine offshore. Today, it is the most viable and mature solution, ready for market. With Hywind, the world's first floating wind farm, we're unlocking the vast potential of floating offshore wind. We believe it's the next wave in renewable energy, and within the next decade, we aim to make floating wind a competitive renewable energy source.
                         </p>
                         <p className="mb-4 font-semibold text-slate-800">
-                            DeepRidge Energy is the global leader in floating offshore wind:
+                            PillarVolt is the global leader in floating offshore wind:
                         </p>
                         <p className="mb-4">
                             Hywind is a great example of what we can achieve by combining our existing offshore expertise with new and available technologies and innovative minds. Thoroughly proven through years of testing, it is the world's most viable floating wind turbine design, consisting of a giant wind turbine placed on top of a floating vertical spar.
@@ -47,10 +47,10 @@ export default function AboutPage() {
                     <div className="mb-12">
                         <h3 className="text-xl font-semibold mb-2 text-slate-800">Natural gas</h3>
                         <p className="mb-4">
-                            Traditionally, most of DeepRidge Energy's gas has been sold through long-term contracts to large European gas companies and suppliers. In the absence of a separate market price for gas, the sale price has often been indexed to the price of oil.
+                            Traditionally, most of PillarVolt's gas has been sold through long-term contracts to large European gas companies and suppliers. In the absence of a separate market price for gas, the sale price has often been indexed to the price of oil.
                         </p>
                         <p className="mb-4">
-                            In the USA, DeepRidge Energy has shares and production in three premium shale oil and gas plays. Gas is used for energy production, heating and industrial purposes. Through transport agreements to New York City and Toronto, residents can keep winter temperatures at bay with shale gas from the Marcellus field.
+                            In the USA, PillarVolt has shares and production in three premium shale oil and gas plays. Gas is used for energy production, heating and industrial purposes. Through transport agreements to New York City and Toronto, residents can keep winter temperatures at bay with shale gas from the Marcellus field.
                         </p>
                         <p className="mb-4">
                             Through commercial negotiations with our counterparts, we have modernised most of our long-term contracts, and gradually moved away from oil indexing. The price of gas is now directly linked to the price in the market places.
@@ -60,14 +60,14 @@ export default function AboutPage() {
                     <div className="mb-12">
                         <h3 className="text-xl font-semibold mb-2 text-slate-800">Respecting people</h3>
                         <p className="mb-4">
-                            We are committed to providing a safe and secure environment for everyone working at our facilities and job sites. DeepRidge Energy's safety and security vision is zero harm. We provide an environment recognised for its equality and diversity, and we treat everyone with fairness, respect and dignity. We do not tolerate any discrimination or harassment of colleagues or others affected by our operations.
+                            We are committed to providing a safe and secure environment for everyone working at our facilities and job sites. PillarVolt's safety and security vision is zero harm. We provide an environment recognised for its equality and diversity, and we treat everyone with fairness, respect and dignity. We do not tolerate any discrimination or harassment of colleagues or others affected by our operations.
                         </p>
                     </div>
 
                     <div className="mb-12">
                         <h3 className="text-xl font-semibold mb-2 text-slate-800">Relating to business partners</h3>
                         <p className="mb-4">
-                            We seek to work with others who share our commitment to ethics and compliance. We believe in the benefits of competition, and DeepRidge Energy always competes in a fair and ethically justifiable manner.
+                            We seek to work with others who share our commitment to ethics and compliance. We believe in the benefits of competition, and PillarVolt always competes in a fair and ethically justifiable manner.
                         </p>
                     </div>
 
