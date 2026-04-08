@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, type TargetAndTransition } from "framer-motion";
 
 type Direction = "up" | "left" | "right" | "none";
 
@@ -12,7 +12,7 @@ interface FadeInProps {
   className?: string;
 }
 
-const initial: Record<Direction, object> = {
+const initial: Record<Direction, TargetAndTransition> = {
   up:    { opacity: 0, y: 22 },
   left:  { opacity: 0, x: 22 },
   right: { opacity: 0, x: -22 },
