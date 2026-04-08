@@ -1,53 +1,89 @@
 import Link from "next/link";
 import Image from "next/image";
 
+const company = [
+  { name: "About Us",      href: "/company/about-us" },
+  { name: "Services",      href: "/services" },
+  { name: "Projects",      href: "/projects" },
+  { name: "Sustainability",href: "/company/sustainability" },
+  { name: "Investors",     href: "/company/investors" },
+];
+
+const support = [
+  { name: "Contact",        href: "/contact" },
+  { name: "Global Locations", href: "/support/global-locations" },
+  { name: "Ethics & Compliance", href: "/support/ethics-compliance" },
+  { name: "Privacy Policy", href: "/legal/privacy-policy" },
+  { name: "Terms of Service", href: "/legal/terms-of-service" },
+];
+
 export function Footer() {
-    return (
-        <footer className="bg-secondary text-white pt-20 pb-10">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-20">
-                    <div className="col-span-1 md:col-span-1">
-                        <div className="flex items-center gap-2 mb-8">
-                            <div className="relative w-32 h-10">
-                                <Image
-                                    src="/de.png"
-                                    alt="PillarVolt"
-                                    fill
-                                    className="object-contain object-left"
-                                />
-                            </div>
-                        </div>
-                        <p className="text-slate-400 text-sm leading-relaxed mb-8">
-                            Engineering sustainable energy solutions for a cleaner, more reliable future. Leading the way in Hywind and advanced natural gas technologies.
-                        </p>
+  return (
+    <footer className="border-t border-border bg-background">
+      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+          {/* Brand */}
+          <div>
+            <Link href="/" className="relative mb-6 block h-8 w-28">
+              <Image
+                src="/logo.png"
+                alt="Harrington Ecobuild"
+                fill
+                className="object-contain object-left"
+              />
+            </Link>
+            <p className="feature-text text-muted-foreground prose-width">
+              Organic architecture rooted in the natural world. We design buildings that grow from the
+              landscape — shaped by site, material, and the people who inhabit them.
+            </p>
+          </div>
 
-                    </div>
+          {/* Company */}
+          <div>
+            <span className="eyebrow mb-5 block">Company</span>
+            <ul className="space-y-3">
+              {company.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="feature-text text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                    <div>
-                        <h4 className="font-bold text-sm mb-6 uppercase tracking-widest text-deep-red">Company</h4>
-                        <ul className="space-y-4 text-sm text-slate-400">
-                            <li><Link className="hover:text-deep-red transition-colors" href="/company/about-us">About Us</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <Link href="/support" className="group block mb-6"><h4 className="font-bold text-sm uppercase tracking-widest text-deep-red group-hover:text-red-400 transition-colors">Support</h4></Link>
-                        <ul className="space-y-4 text-sm text-slate-400">
-                            <li><Link className="hover:text-deep-red transition-colors" href="/contact">Contact Support</Link></li>
+          {/* Support */}
+          <div>
+            <span className="eyebrow mb-5 block">Support</span>
+            <ul className="space-y-3">
+              {support.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="feature-text text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
 
-                            <li><Link className="hover:text-deep-red transition-colors" href="/support/ethics-compliance">Ethics & Compliance</Link></li>
-                            <li><Link className="hover:text-deep-red transition-colors" href="/legal/privacy-policy">Privacy Policy</Link></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="pt-8 border-t border-deep-red flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-4">
-                    <p>© 2025 PillarVolt Corp. All rights reserved.</p>
-                    <div className="flex gap-8">
-                        <Link className="hover:text-deep-red transition-colors" href="/legal/terms-of-service">Terms of Service</Link>
-                        <Link className="hover:text-deep-red transition-colors" href="/legal/privacy-policy">Privacy</Link>
-                        <Link className="hover:text-deep-red transition-colors" href="/legal/cookie-settings">Cookie Settings</Link>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+        <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-border pt-8 sm:flex-row sm:items-center">
+          <p className="feature-text text-muted-foreground">
+            © {new Date().getFullYear()} Harrington Ecobuild. All rights reserved.
+          </p>
+          <div className="flex gap-6">
+            <Link href="/legal/cookie-settings" className="feature-text text-muted-foreground hover:text-foreground transition-colors">
+              Cookie Settings
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }

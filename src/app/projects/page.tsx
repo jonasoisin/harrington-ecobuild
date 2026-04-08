@@ -6,7 +6,7 @@ import { GlobalReach } from "@/components/projects/GlobalReach";
 
 export default function Projects() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen bg-background text-foreground">
 
             <ProjectHero />
             <ProjectList />

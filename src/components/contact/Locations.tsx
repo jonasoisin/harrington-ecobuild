@@ -5,9 +5,9 @@ import { ArrowUpRight } from "lucide-react";
 export function Locations() {
     const locations = [
         {
-            name: "North America",
-            desc: "Regional Headquarters overseeing onshore and offshore operations in the Gulf of Mexico.",
-            image: "https://images.unsplash.com/photo-1550505191-881ec359de67?q=80&w=2666&auto=format&fit=crop", // Houston/City
+            name: "Edinburgh, Scotland",
+            desc: "Principal studio. Our founding home — where every project begins with a conversation about the land.",
+            image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop",
         },
     ];
 

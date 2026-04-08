@@ -1,31 +1,33 @@
-import { Section } from "../ui/Section";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export function ProjectHero() {
-    return (
-        <div className="relative h-[40vh] min-h-[400px] flex flex-col justify-center text-white overflow-hidden">
-            {/* Background Overlay */}
-            <div className="absolute inset-0 bg-stone-900/60 z-10" />
+  return (
+    <section className="border-b border-border py-20 canvas-grid sm:py-28">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-5 lg:items-end">
 
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center z-0"
-                style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop')" // Construction/Crane
-                }}
-            />
+          <div className="space-y-5 lg:col-span-3">
+            <FadeIn>
+              <span className="eyebrow">Our portfolio</span>
+            </FadeIn>
+            <FadeIn delay={80}>
+              <h1>
+                Buildings that <em>belong.</em>
+              </h1>
+            </FadeIn>
+          </div>
 
-            <div className="container mx-auto px-4 md:px-6 relative z-20">
-                <div className="max-w-3xl space-y-6">
-                    <div className="w-1 h-12 bg-primary mb-6" />
-                    <h1 className="text-4xl md:text-6xl font-bold leading-tight uppercase">
-                        Global Energy <br />
-                        Portfolio
-                    </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl font-light leading-relaxed">
-                        Advancing the energy transition through world-scale projects in Hywind offshore wind and high-efficiency natural gas.
-                    </p>
-                </div>
-            </div>
+          <div className="space-y-4 lg:col-span-2 lg:pb-2">
+            <FadeIn delay={160}>
+              <p className="prose-width-sm text-muted-foreground">
+                Buildings across 18 countries, each shaped by its unique landscape, climate, and
+                culture — designed to be inseparable from the land they inhabit.
+              </p>
+            </FadeIn>
+          </div>
+
         </div>
-    );
+      </div>
+    </section>
+  );
 }

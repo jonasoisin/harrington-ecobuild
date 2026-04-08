@@ -1,6 +1,6 @@
-# Stitch Contact PillarVolt
+# Stitch Contact Harrington Ecobuild
 
-Overview of the Stitch Contact PillarVolt project. This project is a Next.js application designed for PillarVolt, featuring a modern, responsive design with a focus on showcased services, projects, and news.
+Overview of the Stitch Contact Harrington Ecobuild project. This project is a Next.js application designed for Harrington Ecobuild, featuring a modern, responsive design with a focus on showcased services, projects, and news.
 
 ## Features
 

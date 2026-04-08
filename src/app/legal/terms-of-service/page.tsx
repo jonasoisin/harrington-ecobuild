@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Terms of Service | PillarVolt',
+    title: 'Terms of Service | Harrington Ecobuild',
     description: 'Terms and conditions for using our website.',
 };
 
@@ -12,12 +12,12 @@ export default function TermsOfServicePage() {
                 <div className="border-l-4 border-deep-red pl-6 mb-12">
                     <h1 className="text-4xl font-bold mb-4 font-display">Terms of Service</h1>
                     <p className="text-xl text-slate-600">
-                        Conditions of use for PillarVolt services.
+                        Conditions of use for Harrington Ecobuild services.
                     </p>
                 </div>
                 <div className="prose max-w-none">
                     <p>
-                        By accessing or using the PillarVolt website, you agree to comply with and be bound by these Terms of Service.
+                        By accessing or using the Harrington Ecobuild website, you agree to comply with and be bound by these Terms of Service.
                     </p>
                 </div>
             </div>

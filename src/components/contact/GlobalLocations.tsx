@@ -7,9 +7,9 @@ import { ExternalLink } from "lucide-react";
 export function GlobalLocations() {
     const locations = [
         {
-            name: "North America",
-            description: "Regional Headquarters overseeing onshore and offshore operations in the Gulf of Mexico.",
-            image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAllfPO1RgtnqPrO5dozYQVNVLFrAqRUl60Jh3bVgZ2cNr0iXUGR8gX38GHnm0NxwZcmONBTN-67bIEXhRmkhvfPCT5nnJrQ9KQ1magKVlgnizwx2s7PFzOJgxEh4e4oKO32gxrSUdp39v2N8KcR815HJC7iFjqZ-Yr0MTqYC8iV0j7d9UWP0IMckK1MTDuvy5mQ9TyoA_lmkO-lypbyFj0qOfkqfiNW86fM_ZW3Xx76wJlBzpWpNZCbv0X2xhE87NUzPZKAYmqGA",
+            name: "Edinburgh, Scotland",
+            description: "Principal studio. Our founding home — where every project begins with a conversation about the land.",
+            image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop",
         },
     ];
 

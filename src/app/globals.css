@@ -1,13 +1,200 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #0A192F;
+/* ─────────────────────────────────────────────
+   FONTS
+───────────────────────────────────────────── */
+body {
+  font-feature-settings: "cv05", "cv11"; /* Inter: no tail on l, single-story a */
 }
 
+/* ─────────────────────────────────────────────
+   DESIGN TOKENS
+───────────────────────────────────────────── */
+:root {
+  --primary:              #0a0a0a;
+  --primary-foreground:   #fafafa;
+  --background:           #fcfcfc;
+  --foreground:           #171717;
+  --muted-foreground:     #525252;
+  --border:               #dfdfdf;
+  --muted:                #ededed;
+  --card:                 #fcfcfc;
+  --card-foreground:      #171717;
 
+  /* Brand accent — used sparingly for structural markers */
+  --brand:                #8B0000;
+}
+
+/* ─────────────────────────────────────────────
+   BASE
+───────────────────────────────────────────── */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 body {
-  color: var(--foreground);
   background: var(--background);
+  color: var(--foreground);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+p {
+  text-wrap: pretty;
+  line-height: 1.65;
+}
+
+/* ─────────────────────────────────────────────
+   TYPE SCALE
+───────────────────────────────────────────── */
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 550;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight: 550;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 550;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+
+/* ─────────────────────────────────────────────
+   THE SERIF ITALIC TRICK
+   <em> inside any heading → Instrument Serif Italic
+───────────────────────────────────────────── */
+h1 em,
+h2 em,
+h3 em {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* ─────────────────────────────────────────────
+   UTILITY CLASSES
+───────────────────────────────────────────── */
+
+/* Eyebrow — always above a heading */
+.eyebrow {
+  display: block;
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted-foreground);
+}
+
+/* Inline feature pair (Apple/Stripe style) */
+.feature-heading {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 550;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--foreground);
+}
+
+.feature-body {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--muted-foreground);
+}
+
+/* Massive stat */
+.stat-number {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--foreground);
+}
+
+/* Small body / description text */
+.feature-text {
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+/* Prose widths */
+.prose-width    { max-width: 65ch; }
+.prose-width-sm { max-width: 40ch; }
+
+/* ─────────────────────────────────────────────
+   BACKGROUND DECORATIONS
+───────────────────────────────────────────── */
+
+/* Canvas grid — use on alternating sections */
+.canvas-grid {
+  background-image:
+    linear-gradient(to right,  var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-color: var(--background);
+}
+
+/* Overlay gradient — for image text overlays */
+.overlay-gradient {
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    color-mix(in srgb, var(--background) 80%, transparent)
+  );
+}
+
+/* ─────────────────────────────────────────────
+   SOFT SECTION SEPARATORS
+   Gradient fade replaces hard border-b lines
+───────────────────────────────────────────── */
+section.border-b {
+  border-bottom-width: 0 !important;
+  position: relative;
+}
+
+section.border-b::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: radial-gradient(
+    ellipse 55% 100% at 50% 100%,
+    var(--border) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* ─────────────────────────────────────────────
+   GLASSMORPHIC TEXT IN CANVAS-GRID SECTIONS
+   Backdrop blur behind content — no visible box
+───────────────────────────────────────────── */
+.canvas-grid > div {
+  backdrop-filter: blur(5px) saturate(1.15);
+  -webkit-backdrop-filter: blur(5px) saturate(1.15);
 }

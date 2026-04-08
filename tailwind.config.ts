@@ -9,46 +9,42 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        borderColor: {
-          DEFAULT: "#ef4444", // red-500
+        background:  "var(--background)",
+        foreground:  "var(--foreground)",
+        border:      "var(--border)",
+        muted: {
+          DEFAULT:    "var(--muted)",
+          foreground: "var(--muted-foreground)",
         },
         primary: {
-          DEFAULT: "#D92D20", // Energy Red
-          hover: "#B91C1C",
+          DEFAULT:    "var(--primary)",
+          foreground: "var(--primary-foreground)",
         },
-        secondary: {
-          DEFAULT: "#0B2B40", // PillarVolt Blue
-          light: "#173A52",
+        card: {
+          DEFAULT:    "var(--card)",
+          foreground: "var(--card-foreground)",
         },
-        "deep-red": "#8B0000",
-        "red-500": "#ef4444",
-        "background-light": "#F9FAFB",
-        "background-dark": "#0A0D12",
-        "surface-light": "#FFFFFF",
-        "surface-dark": "#1E293B",
-        "accent-light": "#F8FAFC",
-        "accent-dark": "#1E293B",
-        muted: "#94A3B8",
+        brand: "var(--brand)",
+        // Legacy aliases kept so existing components don't break
+        "deep-red":        "#8B0000",
+        "background-light":"var(--background)",
+        "surface-light":   "var(--card)",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
-        display: ["var(--font-inter)", "sans-serif"],
+        sans:  ["var(--font-inter)",             "ui-sans-serif", "system-ui"],
+        serif: ["var(--font-instrument-serif)",   "Georgia",       "serif"],
       },
       borderRadius: {
         DEFAULT: "4px",
       },
       container: {
-        center: true,
+        center:  true,
         padding: "1rem",
-        screens: {
-          "2xl": "1400px",
-        },
+        screens: { "2xl": "1400px" },
       },
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require("@tailwindcss/typography"),
   ],
 } satisfies Config;

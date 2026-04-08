@@ -6,21 +6,21 @@ import Image from "next/image";
 export function Projects() {
     const projects = [
         {
-            title: "Autonomous Rig Operations: Brazil Presalt",
-            desc: "Deploying AI-driven drilling systems to maximize ROP and safety in challenging deepwater formations.",
-            image: "https://images.unsplash.com/photo-1591886196621-0e122756d1eb?q=80&w=2070&auto=format&fit=crop", // Construction vehicle
+            title: "The Glenmore Residence, Scottish Highlands",
+            desc: "A private home built from local sandstone and larch timber, sited to disappear into the hillside. Cantilevered terraces echo the rock outcroppings beneath.",
+            image: "/img66/WhatsApp%20Image%202026-04-08%20at%2007.10.07%20(1).jpeg",
             link: "#",
         },
         {
-            title: "North Sea Life Extension Phase III",
-            desc: "A tailored subsea intervention solution that extended the life of mature gas wells by over 15 years.",
-            image: "https://images.unsplash.com/photo-1621252179027-94459d2713dc?q=80&w=2070&auto=format&fit=crop", // Oil rig
+            title: "Thornwood Community Centre, New Zealand",
+            desc: "A civic gathering space nestled into a native forest. Rammed earth walls and a living roof integrate the building seamlessly with its woodland setting.",
+            image: "/img66/WhatsApp%20Image%202026-04-08%20at%2007.10.07.jpeg",
             link: "#",
         },
         {
-            title: "Hywind Tampen: Floating Wind Excellence",
-            desc: "Powering oil and gas platforms with clean, floating wind energy to drastically reduce carbon footprint.",
-            image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop", // Wind
+            title: "Casa Piedra, Catalonia",
+            desc: "A family home using ancient Catalan dry-stone walling traditions combined with contemporary spatial planning — open, light-filled, and indivisible from its terraced landscape.",
+            image: "/img66/WhatsApp%20Image%202026-04-08%20at%2007.10.08%20(1).jpeg",
             link: "#",
         },
     ];
@@ -29,7 +29,7 @@ export function Projects() {
         <Section>
             <div className="flex items-center gap-4 mb-12">
                 <div className="w-8 h-1 bg-primary" />
-                <h2 className="text-3xl font-bold text-secondary">Recent Global Projects</h2>
+                <h2 className="text-3xl font-bold text-secondary">Recent Projects</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

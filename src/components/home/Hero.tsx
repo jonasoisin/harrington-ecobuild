@@ -20,15 +20,15 @@ export function Hero() {
                 <div className="max-w-3xl space-y-6">
                     <div className="w-1 h-12 bg-primary mb-6" /> {/* Red line element */}
                     <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                        Powering the <br />
-                        Future of Energy
+                        Architecture <br />
+                        from the Land
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-200 max-w-2xl font-light">
-                        As an industry leader in Hywind and Natural Gas, we collaborate and engineer solutions to maximize asset value and drive global sustainability.
+                        We design buildings that grow naturally from the landscape — integrating structure, site, and natural materials into spaces that are honest, serene, and built to endure.
                     </p>
                     <div className="pt-8">
                         <Button variant="white" className="gap-2">
-                            EXPLORE SOLUTIONS <ArrowRight className="w-4 h-4" />
+                            EXPLORE OUR WORK <ArrowRight className="w-4 h-4" />
                         </Button>
                     </div>
                 </div>
@@ -41,29 +41,29 @@ export function Hero() {
                         <div className="flex items-start gap-4">
                             <Users className="w-6 h-6 text-white shrink-0" />
                             <div>
-                                <h3 className="font-bold text-lg">Collaboration</h3>
-                                <p className="text-sm text-gray-300">Partnering for excellence</p>
+                                <h3 className="font-bold text-lg">Site Integration</h3>
+                                <p className="text-sm text-gray-300">Buildings rooted in their landscape</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
                             <ShieldCheck className="w-6 h-6 text-white shrink-0" />
                             <div>
-                                <h3 className="font-bold text-lg">Sustainability</h3>
-                                <p className="text-sm text-gray-300">Net-zero transition leader</p>
+                                <h3 className="font-bold text-lg">Material Honesty</h3>
+                                <p className="text-sm text-gray-300">Stone, timber, and clay in their natural state</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
                             <Zap className="w-6 h-6 text-white shrink-0" />
                             <div>
-                                <h3 className="font-bold text-lg">Innovation</h3>
-                                <p className="text-sm text-gray-300">Engineering tomorrow</p>
+                                <h3 className="font-bold text-lg">Spatial Continuity</h3>
+                                <p className="text-sm text-gray-300">Indoor and outdoor as a seamless whole</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
                             <Globe className="w-6 h-6 text-white shrink-0" />
                             <div>
-                                <h3 className="font-bold text-lg">Reliability</h3>
-                                <p className="text-sm text-gray-300">Performance you can trust</p>
+                                <h3 className="font-bold text-lg">Built to Endure</h3>
+                                <p className="text-sm text-gray-300">Designed for generations, not seasons</p>
                             </div>
                         </div>
                     </div>

@@ -19,8 +19,8 @@ export function Navbar() {
                         >
                             <div className="relative w-32 h-12">
                                 <Image
-                                    src="/de.png"
-                                    alt="PillarVolt"
+                                    src="/logo.png"
+                                    alt="Harrington Ecobuild"
                                     fill
                                     className="object-contain object-left"
                                     priority

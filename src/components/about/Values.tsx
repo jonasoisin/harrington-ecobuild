@@ -1,39 +1,57 @@
-// Note: Importing icons from Material Icons via CDN in layout, using span approach from HTML
+import { FadeIn } from "@/components/ui/fade-in";
+import { Card, CardContent } from "@/components/ui/card";
+
+const values = [
+  {
+    name: "Site Integration",
+    description:
+      "Every building we design is shaped by its specific landscape, climate, and topography — growing from the land rather than being imposed upon it.",
+  },
+  {
+    name: "Material Honesty",
+    description:
+      "We use natural, locally sourced stone, timber, and clay in their honest, unfinished states — never disguising what a material is.",
+  },
+  {
+    name: "Form & Function",
+    description:
+      "Following Frank Lloyd Wright's principle, we treat form and function as one inseparable whole — beauty and purpose are never in conflict.",
+  },
+  {
+    name: "Ecological Care",
+    description:
+      "We design for longevity, not fashion. Every decision — from orientation to material — minimises ecological impact across a building's full life.",
+  },
+];
+
 export function Values() {
-    return (
-        <section className="py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
-                    <div className="space-y-4 group">
-                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-slate-100 group-hover:bg-primary transition-colors">
-                            <span className="material-icons-outlined text-primary group-hover:text-white">handshake</span>
-                        </div>
-                        <h3 className="font-display font-bold text-xl uppercase tracking-wide">Collaboration</h3>
-                        <p className="text-slate-600">Forging long-term partnerships with communities and stakeholders to ensure mutual prosperity and energy security.</p>
-                    </div>
-                    <div className="space-y-4 group">
-                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-slate-100 group-hover:bg-primary transition-colors">
-                            <span className="material-icons-outlined text-primary group-hover:text-white">verified_user</span>
-                        </div>
-                        <h3 className="font-display font-bold text-xl uppercase tracking-wide">Excellence</h3>
-                        <p className="text-slate-600">Our operational standards lead the industry, ensuring safety and precision in the most challenging environments.</p>
-                    </div>
-                    <div className="space-y-4 group">
-                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-slate-100 group-hover:bg-primary transition-colors">
-                            <span className="material-icons-outlined text-primary group-hover:text-white">psychology</span>
-                        </div>
-                        <h3 className="font-display font-bold text-xl uppercase tracking-wide">Innovation</h3>
-                        <p className="text-slate-600">Pushing the boundaries of Hywind technology and decarbonizing natural gas production through R&D.</p>
-                    </div>
-                    <div className="space-y-4 group">
-                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-slate-100 group-hover:bg-primary transition-colors">
-                            <span className="material-icons-outlined text-primary group-hover:text-white">eco</span>
-                        </div>
-                        <h3 className="font-display font-bold text-xl uppercase tracking-wide">Responsibility</h3>
-                        <p className="text-slate-600">Environmental stewardship is at our core, committed to a net-zero future by 2050.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section className="border-b border-border py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+        <FadeIn className="mb-16 max-w-4xl space-y-3">
+          <span className="eyebrow">What we stand for</span>
+          <p>
+            <span className="feature-heading">Four values. </span>
+            <span className="feature-body">Every decision we make flows from these principles.</span>
+          </p>
+        </FadeIn>
+
+        <div className="grid gap-6 sm:grid-cols-2">
+          {values.map((item, i) => (
+            <FadeIn key={item.name} delay={i * 60}>
+              <Card className="h-full rounded-2xl py-0 transition hover:-translate-y-0.5 hover:shadow-md">
+                <CardContent className="p-8">
+                  <div className="mb-4 h-1 w-8 rounded-full bg-primary" />
+                  <h3 className="mb-2">{item.name}</h3>
+                  <p className="feature-text text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            </FadeIn>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
 }

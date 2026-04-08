@@ -2,17 +2,14 @@
 
 import { ContactHero } from "@/components/contact/ContactHero";
 import { InquiryForm } from "@/components/contact/InquiryForm";
-
-
+import { CareerCTA } from "@/components/contact/CareerCTA";
 
 export default function Contact() {
     return (
-        <main className="min-h-screen bg-background-light text-slate-900 font-sans transition-colors duration-300">
-
+        <main className="min-h-screen bg-background text-foreground">
             <ContactHero />
             <InquiryForm />
-
-
+            <CareerCTA />
         </main>
     );
 }

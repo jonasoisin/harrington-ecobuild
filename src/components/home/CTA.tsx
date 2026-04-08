@@ -17,10 +17,10 @@ export function CTA() {
                 <div className="max-w-2xl text-center md:text-left">
                     <div className="w-12 h-1 bg-primary mb-8 mx-auto md:mx-0" />
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        Join the Energy Revolution
+                        Shape the Built Environment
                     </h2>
                     <p className="text-lg text-gray-300 leading-relaxed max-w-xl">
-                        Build a career that matters. At PillarVolt, we are looking for the next generation of engineers, thinkers, and doers to reshape the global energy landscape.
+                        Build a career that matters. At Harrington Ecobuild, we are looking for the next generation of architects, designers, and craftspeople to redefine the relationship between human habitation and the natural world.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 mt-10">
                         <Button variant="primary">FIND YOUR ROLE</Button>
